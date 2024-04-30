@@ -16,11 +16,12 @@ const DECS_SECTION = document.createElement("p");
 const AGE_SECTION = document.createElement("p");
 const MUSIC_SECTION = document.createElement("div");
 
-const musiclist = USER.fav_music.books.map(e => {
+const musiclist = USER.fav_music.music.map(e => {
     const item = document.createElement("ul");
     item.textContent = e;
     return item;
 });
+
 console.log(musiclist);
 
 NAME_SECTION.textContent = USER.userName;
